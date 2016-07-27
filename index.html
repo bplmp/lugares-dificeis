@@ -28,14 +28,14 @@
 
     function followLink(e) {
       console.log(e);
-      var url = "/#/" + e.target.feature.properties.link;
+      var url = "/lugares-dificeis/#/" + e.target.feature.properties.link;
       window.location = url;
     }
 
     function onMapClick(e) {
       console.log(e.target.feature)
       if (!e.target.feature) {
-        window.location = "/#/";
+        window.location = "/lugares-dificeis/#/";
       }
     }
     map.on('mouseup', onMapClick);
